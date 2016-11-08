@@ -1,0 +1,63 @@
+﻿@color-accepted: #14c880;
+@color-rejected: #df505d;
+@color-noresponse: rgb(49, 49, 49);
+
+
+.animated {
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+.animated-foreground {
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.border-radius-zero {
+    border-radius: 0;
+}
+
+@-moz-keyframes blink {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: #0d1118;
+    }
+}
+
+@keyframes blink {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: #0d1118;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: #0d1118;
+    }
+}
+
+.blink {
+    -webkit-animation: blink 0.5s linear infinite;
+    -moz-animation: blink 0.5s linear infinite;
+    -o-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+}
+
+.btn{
+    border-radius: 0;
+}
